@@ -1,0 +1,233 @@
+/* Mobile */
+@media only screen and (max-width:46.1875em){
+    /* tắt hover header */
+    .header #searchic:hover{
+        transform: none;
+    }
+    .header #login:hover,
+    .header #home:hover,
+    .header .setting:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /* an thanh phan */
+    div#logo,.header #login{
+        display: none;
+    }
+    .header div#search-box{
+        margin-left: 10px;
+        width: 65%;
+    }
+    .header #search-box #searchip{
+        font-size: 15px;
+    }
+    /* header */
+    .header{
+        height: 35px;
+    }
+    .header #search-box #searchic,
+    .header #home,
+    .header .setting{
+        font-size: 15px;
+    }
+    /* menu-setting */
+    .setting .subset{
+        margin-top: 13px;
+    }
+    .setting .subset::before{
+    right: 4%;
+    top: -14px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid ghostwhite;
+    }
+    /* kich thuc menu cua setting */
+    ul.subset.hide-show{
+        font-size: 15px;
+        width: 200px;
+    }
+
+    /* container  */
+    .container-video{
+        width: 100%;
+        margin: 35px auto;
+    }
+    /* .song-info */
+    .song-info{
+        margin-top: 5px;
+    }
+    #song-title{
+        font-size: 20px;
+    }
+    #artist-name{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .social-icons{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    /* .lyrics-section */
+    .lyrics-section{
+        max-height: 500px;
+    }
+    .lyrics-title{
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    .lyrics{
+        font-size: 12px;
+        margin: 0 15px;
+    }
+    .expand-button,
+    .collapse-button{
+        font-size: 15px;
+    }
+    /* suggest content */
+    .container-recommend{
+        width: 100%;
+    }
+    .section-title{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    /*cuộn đề xuất  */
+    .content-item{
+        flex: 0 0 calc(50%);
+    }
+    .content-artist,
+    .content-title{
+        font-size: 10px;
+    }
+    span.arrow.right-arrow{
+        right: 0;
+    }
+    span.arrow i{
+        font-size: 25px;
+    }
+    .content-item{
+        margin-right: 2px;
+    }
+    /* container-music */
+    .container-music {
+        width: 100%;
+        margin: 5px auto;
+        display: block;
+    }
+    .main-area,
+    .sidebar{
+        width: 100%;
+        padding: 0;
+    }
+    p.song-artist,
+    h3.song-title{
+        width: 100%;
+        margin: 0;
+    }
+    .song-border{
+        margin-left: 0;
+    }
+    .song, .album{
+        padding: 5px;
+    }
+    .song-info1,
+    .song-icons{
+        display: block;
+        font-size: 10px;
+    }
+    .song-icons{
+        justify-content: space-around;
+        display: flex;
+        margin-left: 5%;
+        width: 10%;
+    }
+    .song-image, .album-image{
+        height: 40px;
+        width: 40px;
+    }
+    .album-info{
+        font-size: 10px;
+    }
+    .album-name{
+        font-weight: 700;
+    }
+    /* bỏ hover */
+    .container-music .song:hover img ,
+    .container-music .album:hover img{
+        transform:none;
+        box-shadow: none;
+    }
+    /* .icon:hover */
+    .icon:hover{
+        color: black;
+    }
+    /* box comment */
+    .comment-box{
+        width: 85%;
+        height: 10%;
+    }
+    .comment-box input[type="text"]{
+        margin: 0;
+        font-size: 15px;
+    }
+    button#submitButton{
+        font-size: 10px;
+        height: 30%;
+    }
+}
+/* Tablet */
+@media only screen and (min-width:46.1875em) and (max-width:63.9375em){
+    /* tắt hover header */
+    .header #searchic:hover{
+        transform: none;
+    }
+    .header #login:hover,
+    .header #home:hover,
+    .header .setting:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /* header */
+    .header #logo{
+        width: 15%;
+    }
+    .header #search-box{
+        width: 40%;
+    }
+    .header #login{
+        white-space: nowrap;
+    }
+    /* .icon:hover */
+    .icon:hover{
+        color: black;
+    }
+    /* box comment */
+    .comment-box{
+        width: 60%;
+        height: 15%;
+    }
+    /*cuộn đề xuất  */
+    .content-item{
+        flex: 0 0 calc(50% - 15px);
+    }
+    /* container-music */
+    .container-music{
+        width: 90%;
+    }
+    .song-border{
+        margin-left: 0;
+    }
+    /* .container-video */
+    .container-video{
+        width: 90%;
+    }
+    /* bỏ hover */
+    .container-music .song:hover img ,
+    .container-music .album:hover img{
+        transform:none;
+        box-shadow: none;
+      }
+}
+/* PC */
+@media only screen and (min-width:63.9375em){
+
+}

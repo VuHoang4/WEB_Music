@@ -1,0 +1,116 @@
+/* Mobile */
+@media only screen and (max-width:46.1875em){
+       /* tắt hover header */
+       .header #searchic:hover{
+        transform: none;
+    }
+    .header #login:hover,
+    .header #home:hover,
+    .header .setting:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /* an thanh phan */
+    div#logo,.header #login{
+        display: none;
+    }
+    .header div#search-box{
+        margin-left: 10px;
+        width: 65%;
+    }
+    .header #search-box #searchip{
+        font-size: 15px;
+    }
+    /* header */
+    .header{
+        height: 35px;
+    }
+    .header #search-box #searchic,
+    .header #home,
+    .header .setting{
+        font-size: 15px;
+    }
+    /* menu-setting */
+    .setting .subset{
+        margin-top: 13px;
+    }
+    .setting .subset::before{
+    right: 4%;
+    top: -14px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid ghostwhite;
+    }
+    /* kich thuc menu cua setting */
+    ul.subset.hide-show{
+        font-size: 15px;
+        width: 200px;
+    }
+    /* chu tren slider */
+    #slider .text-content{
+        bottom: 10px;
+    }
+    #slider .text-heading,
+    #slider .text-descripttion{
+        font-size: 10px;
+        margin-top: 0;
+    }
+    /* container */
+    .container{
+        width: 100%;
+    }
+    #slider{
+        margin-top: 35px;
+    }
+    .list-topic{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .list-topic a{
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+}
+/* Tablet */
+@media only screen and (min-width:46.1875em) and (max-width:63.9375em){
+    /* tắt hover header */
+    .header #searchic:hover{
+        transform: none;
+    }
+    .header #login:hover,
+    .header #home:hover,
+    .header .setting:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /* header */
+    .header #logo{
+        width: 15%;
+    }
+    .header #search-box{
+        width: 40%;
+    }
+    .header #login{
+        white-space: nowrap;
+    }
+    /* text on slider */
+    #slider .text-content{
+        bottom: 15%;
+    }
+    #slider .text-heading{
+        font-size: 30px;
+    }
+    #slider .text-descripttion{
+        font-size: 15px;
+    }
+    /* div topic */
+    .list-topic {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/* PC */
+@media only screen and (min-width:63.9375em){
+
+}

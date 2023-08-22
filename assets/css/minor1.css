@@ -1,0 +1,526 @@
+*{
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hide-show{
+    display:block !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: cornflowerblue !important;
+}
+.header{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(50,60,100,1);
+    height: 50px;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    color: black;
+}
+
+.header #logo{
+    height: 100%;
+    width: 20%;
+    margin-left: 30px;
+}
+
+.header #logo img{
+    width: 100%;
+}
+
+.header #search-box{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 50%;
+    position: relative;
+    border-radius: 60px;
+}
+
+.header #search-box #searchip{
+    height: 100%;
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    margin: 0 0 0 14px;
+    display: block;
+    outline: none;
+    font-size: 25px;
+}
+/* Mau placehoder */
+input::placeholder {
+    color: black;
+    opacity: 0.8; /* Điều chỉnh độ mờ tùy ý */
+}
+.header #search-box #searchic{
+    font-size: 28px;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: inline-block;
+    cursor:pointer;
+}
+/* hover searchic  of header */
+.header #searchic {
+    transition: transform 0.3s;
+  }
+  
+  .header #searchic:hover {
+    transform: scale(1.2);
+  }
+  
+  /* end hover */
+.header #action-buttons{
+    width: 25%;
+    display: flex;
+}
+
+.header #login{
+    white-space: nowrap;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12%;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header #home{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    margin-left: 12%;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.header .setting{
+    position: relative;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    margin-left: 8%;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+/* Setting */
+.setting .subset{
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    background-color: ghostwhite;
+    right: 0;
+    margin-top: 25px;
+    top: 100%;
+    position: absolute;
+    list-style-type: none;
+    line-height: 1.6;
+    padding: 10px;
+    display: none;
+    width: 350px;
+}
+
+.setting .subset::before{
+    content: "";
+    position: absolute;
+    right: 2%;
+    top: -25px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid ghostwhite;
+    height: 0;
+    width: 0;
+}
+.setting .subset li{
+    border-bottom: 5px ridge floralwhite;
+}
+.setting .subset a{
+    text-decoration: none;
+    color: black;
+}
+.setting .subset i{
+    padding:0 20px;
+}
+
+/* Hover  */
+.header #login:hover,
+.header #home:hover,
+.header .setting:hover{
+    background-color: rgb(8,5,245,0.7);
+
+    cursor: pointer;
+
+}
+
+.setting .subset li:hover{
+    background-color: lavender;
+    cursor: pointer;
+}
+/*  */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-video {
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.top-section {
+    margin-bottom: 30px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.song-info {
+    margin-top: 20px;
+}
+
+#song-title {
+    font-size: 30px;
+}
+
+#artist-name {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #888;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.icon {
+    cursor: pointer;
+}
+  
+/* hover icon */
+.icon:hover{
+    color: cornflowerblue;
+}
+
+.lyrics-section {
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+    text-align: left;
+    background-image: url('../images/background-image-lyrics.jpg');
+    background-size: cover;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    max-height: 580px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.lyrics-title {
+    padding-top: 10px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 35px;
+}
+.lyrics {
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+}
+.expand-button,
+.collapse-button {
+    cursor: pointer;
+    color: blue;
+    font-size: 18px;
+  }
+  
+/* CSS cho phần chính */
+.container-music {
+    width: 80%;
+    display: flex;
+    height: auto;
+    margin: 100px auto;
+    background-image: url(../images/background_image_container-music.jpg);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.main-area {
+    border-radius: 25px 0 0 25px;
+    width: 70%;
+    flex: 70%;
+    padding: 20px;
+    background-color: inherit;
+}
+
+.sidebar {
+    border-radius: 0 25px 25px 0;
+    width: 30%;
+    flex: 30%;
+    padding: 20px;
+    background-color: inherit;
+}
+
+.song-list, .album-list {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.song, .album {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.song-image, .album-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* .song-title, .album-name {
+    font-size: 18px;
+    margin: 0;
+} */
+
+.song-artist, .album-artist {
+    
+}
+
+.song-icons {
+   
+}
+.song-info1 {
+    width: 70%;
+    display: flex;
+}
+.song-icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.song-border {
+    margin-left: -20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+h3.song-title {
+    white-space: nowrap;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p.song-artist {
+    text-align: left;
+    margin-left: 10px;
+    white-space: nowrap;
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p.album-name {
+    /* width: 70%; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.album-info {
+    width: 60%;
+    /* display: flex; */
+}
+p.album-artist{
+    /* width: 30%; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* thung chua 3 */
+/* Cùng như styles.css ở trên */
+
+.container-recommend {
+    margin: 100px auto 0;
+    width: 80%;
+}
+.content-list {
+    overflow: hidden;
+    position: relative;
+}
+span.arrow.left-arrow{
+    z-index: 1;
+    position: absolute;
+    top: 24%;
+    left: 0px;
+}
+span.arrow.right-arrow{
+    position: absolute;
+    right: 15px;
+    top: 24%;
+}
+span.arrow i{
+    font-size: 40px;
+}
+.content-row {
+    display: flex;
+    animation: scroll 8s linear infinite;
+}
+
+/* .content-title,
+.content-artist{
+    width: 80%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+.content-item {
+    flex: 0 0 calc(25% - 15px);
+    margin-right: 15px;
+    text-align: center;
+    opacity: 1;
+    
+}
+.content-item img{
+    width: 100%;
+}
+.content-item.hidden {
+    opacity: 0;
+}
+
+.arrow-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+/* end thung chua 3 */
+/* CSS cho font-awesome icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+#footer{
+    padding: 60px 16px;
+    text-align: center;
+}
+#footer .social-list{
+    font-size: 24px;
+}
+#footer .social-list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .social-list a:hover{
+    color: rgba(0,0,0,0.3);
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
+}
+/* end footer */
+/* tét */
+.icon {
+    cursor: pointer;
+  }
+  
+  .comment-box {
+    background-image: url('../images/background-image-comment.jpg');
+    background-size: cover;
+    display: none;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    /* background: rgba(0,109,252,0.7); */
+    z-index: 9999;
+    border-radius: 15px;
+    height: 25%;
+}
+  .comment-box input[type="text"] {
+    width: 100%;
+    height: 50%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: inherit;
+    outline: none;
+    font-size: 25px;
+    background-color: inherit;
+}
+button#submitButton{
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: inherit;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+}
+/* hover */
+#submitButton:hover{
+    background-color: cornflowerblue;
+}
+.comment-box span.icon{
+    top: 0;
+    margin-right: 10px;
+    right: 0;
+    position: absolute;
+}
+/* hover .container-music  img */
+.container-music img {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out, box-shadow 0.5s ease-in-out;
+  }
+  
+.container-music .song:hover img ,
+.container-music .album:hover img{
+    transform: translate(-40%, -15%) scale(1.25);
+    box-shadow: 10px 25px 20px rgba(0, 0, 0, 0.9);
+  }

@@ -1,0 +1,235 @@
+/* Mobile */
+@media only screen and (max-width:46.1875em){
+    /* tắt hover header */
+    .header #searchic:hover{
+        transform: none;
+    }
+    .header #login:hover,
+    .header #home:hover,
+    .header .setting:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /* header */
+    .header{
+        height: 35px;
+    }
+    .header #search-box #searchic,
+    .header #home,
+    .header .setting{
+        font-size: 15px;
+    }
+    /* menu-setting */
+    .setting .subset{
+        margin-top: 13px;
+    }
+    .setting .subset::before{
+    right: 4%;
+    top: -14px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid ghostwhite;
+    }
+    /* an thanh phan */
+    div#logo,.header #login{
+        display: none;
+    }
+    .header div#search-box{
+        margin-left: 10px;
+        width: 65%;
+    }
+    .header #search-box #searchip{
+        font-size: 15px;
+    }
+    /* chu tren slider */
+    #slider .text-content{
+        bottom: 10px;
+    }
+    #slider .text-heading,
+    #slider .text-descripttion{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    /* kich thuc menu cua setting */
+    ul.subset.hide-show{
+        font-size: 15px;
+        width: 200px;
+    }
+    /* an nav-per */
+    #nav-personal{
+        display: none;
+    }
+    /* font-sixe .title-text */
+    .title-text{
+        font-size: 25px;
+    }
+    /*  */
+    .container{
+        width: 90%;
+    }
+    /*  box-video-hot */
+    .content-video{
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .bvh-item-h3 a,.bvh-item-info p{
+        font-size: 12px;
+    }
+    .bvh-item{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .box-video-hot .content-video img{
+        width: 90%;
+    }
+    /* music hot */
+    .box-music-hot .col-5{
+        height: auto;
+        width: 50%;
+        max-width: 50%;
+        padding: 0 10px;
+    }
+    .box-music-hot .col-5 .bvh-item,
+    .box-music-hot .col-5 img{
+        width: 100%;
+    }
+    .box-music-hot .image-container .hidden-image{
+        display:none;
+    }
+    /* topic hot */
+    .box-top-hit .content-video{
+        height: 160px;
+    }
+    .box-top-hit .bvh-item-lnk{
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* ca si hot */
+    .box-artist-hot .column{
+        flex:0 0 50%;
+        max-width: 50%;
+    }
+    /* rank */
+    .box-ranktable .row .column:first-child{
+        padding: 0;
+        width: 100%;
+    }
+    .box-ranktable .row .column:last-child{
+        display: none;
+    }
+}
+/* Tablet */
+@media only screen and (min-width:46.1875em) and (max-width:63.9375em){
+    /* header */
+    .header #logo{
+        width: 15%;
+    }
+    .header #search-box{
+        width: 40%;
+    }
+    .header #login{
+        white-space: nowrap;
+    }
+    /* nav-per */
+    #nav-personal #nav{
+        white-space: nowrap;
+        width: 85%;
+    }
+    #nav-personal #nav>li:first-child{
+        margin-left: 10%;
+    }
+    #nav-personal .per{
+        margin-left: 5%;
+    }
+    .per .per-subset{
+        right: -30px;
+        width: 300px;
+        font-size: 25px;
+    }
+    #nav-personal .per .fa-user{
+        font-size: 45px;
+    }
+    #nav-personal .per i{
+        font-size: 25px;
+    }
+    .per .per-subset::before{
+        left: 79%;
+    }
+    /* MV hot */
+    .content-video {
+        width: 50%;
+        max-width: 50%;
+        height: 250px;
+    }
+    /* music hot */
+    .box-music-hot .col-5{
+        width: 33.33%;
+        max-width: 33.33%;
+    }
+    .box-music-hot .col-5 img{
+        width: 100%;
+    }
+    .box-music-hot .col-5 .bvh-item{
+        width: 100%;
+    }
+    .box-music-hot .row .col-5:last-child{
+        display: none;
+    }
+    .bvh-item-h3 a{
+        font-size: 17px;
+    }
+    .box-music-hot .image-container .hidden-image{
+        display:none;
+    }
+    /* box-ranktable */
+    .box-ranktable .container{
+        width: 90%;
+    }
+    .column{
+        padding: 0 3%;
+    }
+    /* hot singer */
+    .box-artist-hot .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    /* nav */
+    .submenu-nav .li-submenu ul{
+        text-align: center;
+        font-size: 18px;
+    }
+    .submenu-nav{
+        width: 600px;
+        padding-left:0
+    }
+    /* vo hieu hoa the a cua nav */
+    ul#nav>li>a{
+        pointer-events: none;
+    }
+    /* tắt hover header */
+    .header #searchic:hover{
+        transform: none;
+    }
+    .header #login:hover,
+    .header #home:hover,
+    .header .setting:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    /* Ẩn mặc định submenu */
+    #nav-personal #nav .submenu-nav {
+        display: none;
+    }
+
+    /* Hiển thị submenu khi có class active */
+    #nav-personal #nav .submenu-nav.active {
+        display: block;
+    }
+    ul#menu-video{
+        right:100px;
+    }
+}
+/* PC */
+@media only screen and (min-width:63.9375em){
+
+}
